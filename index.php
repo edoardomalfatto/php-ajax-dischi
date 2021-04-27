@@ -2,7 +2,6 @@
 <!-- Includo il database -->
 <?php
     include __DIR__ .'/partials/template/database.php';
-    var_dump($database)
 ?>
 
 
@@ -23,18 +22,21 @@
 
 <body>
     <div id="app">
-        <header class="lightblue">
-            <div class="logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1024px-Spotify_logo_without_text.svg.png" alt="Spotify Logo" srcset="">
-            </div>
-        </header>
+       <!-- Includo l'header -->
+       <?php
+            include __DIR__ .'/partials/template/header.php';
+        ?>
 
-    <!-- Includo il main -->
-    <?php
-        include __DIR__ .'/partials/template/main.php';
-    ?>
+        <!-- Includo il main -->
+        <?php
+            include __DIR__ .'/partials/template/main.php';
+        ?>
 
-    <script src="main.js"></script>
+         <!-- Includo il footer -->
+         <?php
+            include __DIR__ .'/partials/template/footer.php';
+        ?>
+
 </body>
 
 </html>

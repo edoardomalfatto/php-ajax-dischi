@@ -1,21 +1,26 @@
     <main class="darkblue">
+ 
                 <div class="diskboxs_container">
-                    <div v-for="diskbox in diskBoxes" class="diskbox lightblue">
+                    <?php foreach($database as $diskbox) { ?>
+                        <div class="diskbox lightblue">
                         <div class="poster">
-                            <img :src="diskbox.poster" alt="">
+                            <img src=<?php echo($diskbox["poster"]) ?>>
                         </div>
                         <div class="description">
                             <div class="title">
-                                <h2>{{diskbox.title}}</h2>
+                                <h2><?php echo($diskbox["title"]) ?></h2>
                             </div>
                             <div class="author little_text">
-                                <p>{{diskbox.author}}</p>
+                                <p><?php echo($diskbox["author"]) ?></p>
                             </div>
                             <div class="year little_text">
-                                <p>{{diskbox.year}}</p>
+                                <p><?php echo($diskbox["year"]) ?></p>
                             </div>
                         </div>
 
                     </div>
+                                   
+                    <?php }?>
+                  
                 </div>
             </main>

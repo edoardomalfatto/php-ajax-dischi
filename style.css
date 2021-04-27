@@ -6,97 +6,73 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 10px;
 }
 
-
-/* Utility */
-
-.list_none {
-    list-style: none;
+.lightblue {
+    background-color: rgb(46, 58, 70);
 }
 
-.standard_wrapper {
-    padding: 80px 0;
-    width: 50%;
-    margin: 0 auto;
+.darkblue {
+    background-color: rgb(30, 45, 59);
 }
 
+header {
+    height: 10vh;
+}
 
-/* Header */
+header .logo {
+    height: 100%;
+}
 
+header .logo img {
+    height: 100%;
+    padding: 10px;
+}
 
-/* Header_top */
+main {
+    width: 100%;
+    height: 100%;
+    min-height: 90vh;
+}
 
-.header_top {
-    color: #5f6368;
-    height: 80px;
+main .diskboxs_container {
+    width: 100%;
     display: flex;
-    align-items: center;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10vh;
 }
 
-.header_top h1 {
-    font-size: 150%;
-    padding-left: 10px;
+.diskbox {
+    width: 15%;
+    padding: 10px;
+    margin: 10px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    width: 5%;
-}
-
-.logo img {
+.diskbox .poster {
     width: 100%;
 }
 
-
-/* Header_bottom */
-
-.header_bottom {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-    ;
+.diskbox .poster img {
+    width: 100%;
 }
 
-.header_bottom ul {
-    display: flex;
+.description {
+    text-align: center;
+    padding-top: 10px;
 }
 
-.header_bottom ul li {
-    padding-left: 20px;
-    position: relative;
+.description>* {
+    padding-top: 10px;
 }
 
-.header_bottom ul li a {
-    color: #5f6368;
-    text-decoration: none;
-    font-weight: bolder;
+.description .title h2 {
+    text-transform: uppercase;
+    color: white;
 }
 
-.header_bottom li.selected::after {
-    content: "";
-    background-color: #3367d6;
-    position: absolute;
-    width: 88%;
-    height: 3px;
-    top: 27px;
-    left: 20px;
-}
-
-.header_bottom a.selected {
-    color: #3367d6;
-}
-
-
-/* Main */
-
-main p {
-    padding-top: 20px;
-}
-
-main h2 {
-    padding-top: 40px;
+.little_text {
+    font-size: 80%;
+    color: lightgray;
 }
