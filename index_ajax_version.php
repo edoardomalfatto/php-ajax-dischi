@@ -34,7 +34,7 @@
                             <div class="title">
                                 <h2>{{diskbox.title}}</h2>
                             </div>
-                            <div class="author little_text">
+                            <div class="author">
                                 <p>{{diskbox.author}}</p>
                             </div>
                             <div class="year little_text">

@@ -10,7 +10,7 @@
                             <div class="title">
                                 <h2><?php echo($diskbox["title"]) ?></h2>
                             </div>
-                            <div class="author little_text">
+                            <div class="author">
                                 <p><?php echo($diskbox["author"]) ?></p>
                             </div>
                             <div class="year little_text">

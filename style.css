@@ -65,6 +65,7 @@ main .diskboxs_container {
 }
 
 .description {
+    color: white;
     text-align: center;
     padding-top: 10px;
 }
@@ -78,7 +79,7 @@ main .diskboxs_container {
     color: white;
 }
 
-.little_text {
-    font-size: 80%;
-    color: lightgray;
+.year.little_text {
+    padding-bottom: 20px;
+    font-weight: bolder;
 }
