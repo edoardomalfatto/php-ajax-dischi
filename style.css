@@ -9,8 +9,13 @@ body {
     font-size: 10px;
 }
 
-.lightblue {
-    background-color: rgb(46, 58, 70);
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.black {
+    background-color: black;
 }
 
 .darkblue {
@@ -18,7 +23,7 @@ body {
 }
 
 header {
-    height: 10vh;
+    height: 5vh;
 }
 
 header .logo {
@@ -45,13 +50,14 @@ main .diskboxs_container {
 }
 
 .diskbox {
-    width: 15%;
+    width: 25%;
     padding: 10px;
-    margin: 10px;
+    margin: 25px;
 }
 
 .diskbox .poster {
     width: 100%;
+    padding: 0 20px;
 }
 
 .diskbox .poster img {

@@ -20,22 +20,24 @@
     <title>Vue Dischi</title>
 </head>
 
-<body>
-    <div id="app">
-       <!-- Includo l'header -->
-       <?php
-            include __DIR__ .'/partials/template/header.php';
-        ?>
-
-        <!-- Includo il main -->
+<body class="darkblue">
+    <div class="wrapper">
+        <!-- Includo l'header -->
         <?php
-            include __DIR__ .'/partials/template/main.php';
-        ?>
+                include __DIR__ .'/partials/template/header.php';
+            ?>
 
-         <!-- Includo il footer -->
-         <?php
-            include __DIR__ .'/partials/template/footer.php';
-        ?>
+            <!-- Includo il main -->
+            <?php
+                include __DIR__ .'/partials/template/main.php';
+            ?>
+
+            <!-- Includo il footer -->
+            <?php
+                include __DIR__ .'/partials/template/footer.php';
+            ?>
+    </div>
+       
 
 </body>
 

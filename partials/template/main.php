@@ -2,7 +2,7 @@
  
                 <div class="diskboxs_container">
                     <?php foreach($database as $diskbox) { ?>
-                        <div class="diskbox lightblue">
+                        <div class="diskbox black">
                         <div class="poster">
                             <img src=<?php echo($diskbox["poster"]) ?>>
                         </div>
