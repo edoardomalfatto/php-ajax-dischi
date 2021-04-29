@@ -22,6 +22,12 @@
                 <div class="logo">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1024px-Spotify_logo_without_text.svg.png" alt="Spotify Logo" srcset="">
                 </div>
+                <select v-model="selectedAuthor" @change="switchAuthor()">
+                    <option >All</option>
+                    <option v-for="author in authorsToSelect">
+                    {{author}}
+                    </option>
+                </select>
             </header>
 
             <main class="darkblue">
@@ -34,7 +40,7 @@
                             <div class="title">
                                 <h2>{{diskbox.title}}</h2>
                             </div>
-                            <div class="author">
+                            <div class="author ">
                                 <p>{{diskbox.author}}</p>
                             </div>
                             <div class="year little_text">
